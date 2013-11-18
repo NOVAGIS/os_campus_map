@@ -7,7 +7,7 @@ L.control.layers({
 },{},{collapsed: false}).addTo(map);
 
 
-var markerLayer1 = L.mapbox.markerLayer().loadURL('../geojson/transport.geojson');
+var markerLayer1 = L.mapbox.markerLayer().loadURL('geojson/transport.geojson');
 
 // reference the map-ui area for the layer toggle.
 var ui = document.getElementById('map-ui');

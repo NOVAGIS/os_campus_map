@@ -7,9 +7,9 @@ L.control.layers({
 },{},{collapsed: false}).addTo(map);
 
 
-var markerLayer1 = L.mapbox.markerLayer().loadURL('../geojson/facilities.geojson');
-var markerLayer2 = L.mapbox.markerLayer().loadURL('../geojson/transport.geojson');
-var markerLayer3 = L.mapbox.markerLayer().loadURL('../geojson/entrances.geojson');
+var markerLayer1 = L.mapbox.markerLayer().loadURL('geojson/facilities.geojson');
+var markerLayer2 = L.mapbox.markerLayer().loadURL('geojson/transport.geojson');
+var markerLayer3 = L.mapbox.markerLayer().loadURL('geojson/entrances.geojson');
 
 // reference the map-ui area for the layer toggle.
 var ui = document.getElementById('map-ui');
