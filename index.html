@@ -1,27 +1,42 @@
 ---
-layout: default
+layout: map
 title: Welcome to ISEGI Campus Map Open Source Team Site
 ---
-<h3>Welcome to ISEGI Campus Map Open Source Team Site</h3>
+<div class="row header_map">
+	<div class="large-2 columns">
+		<div id='branding'></div>
+	</div>
+	<div class="large-10 columns">
+		<div id="about">
+		    <h1>UNL - Campus Campolide </h1>
+			<a class="button medium" href="http://www.unl.pt">&larr; Return to UNL.pt</a>
+			<a class="button medium" href="{{site.baseurl}}/foursquare">Hungry?</a>
+			<a class="button medium" href="{{site.baseurl}}/transport">Need Transport?</a>
+		    <p>This is the Universidade de Lisboa Campus at Compolide. Both the NOVA School of Business and Economy, and ISEGI NOVA are located here.</p>
+		  </div>
+	</div>
+</div>
+<div class="row">
+	<div class="large-12 columns" style="padding-top:40px; padding-bottom:40px;">
+		<p style="margin-bottom:0;"><strong>Filter Map Markers</strong></p>
+		<input placeholder='Find Facilities' id='search' />
+		<div id="onscreen">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="row map_container">
+	<div class="large-12 columns">
+		<div id='map-ui'></div>
+	    <div id="map" data-map="map" class="map">
+	</div>
+	
+</div>
+	
+    </div>
 
-<p>This is a project to replace the current campus map of UNL Nova and fulfill the requirements of the GIS Applications Course.</p>
-
-
-<p><b>Replace this:</b></p>
-
-<img src="{{site.baseurl}}/media/unl_current_map.png">
-
-<p><strong>with something new</strong></p>
-
-<h3>The OS Team</h3>
-<ul>
-	<li><a href="https://github.com/eljohn">eljohn</a></li>
-	<li><a href="https://github.com/karykey">karykey</a></li>
-	<li><a href="https://github.com/MiguelCarrilhoGT">MiguelCarrilhoGT</a></li>
-	<li><a href="https://github.com/rustyb">rustyb</a></li>
-	<li><a href="https://github.com/YasmineMegahed87">YasmineMegahed87</a></li>
-</ul>
-<hr />
-
-<h3>Blog Archive</h3>
-{% include posts_by_month.html %}	
+    <script src="{{site.baseurl}}/javascripts/site/script1.js"></script>
+    <script src="{{site.baseurl}}/javascripts/site/foursquare.js"></script>
+	
+	
