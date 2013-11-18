@@ -1,0 +1,45 @@
+---
+title: "Campus Map Transport"
+layout: map
+permalink: transport
+---
+
+<style>
+
+		.direction a {font-weight:bold;font-size:14px;}
+		.title {text-transform:capitalize;}
+	
+</style>
+
+ 
+        <div class="row header_map">
+			<div class="large-2 columns">
+				<div id='branding'></div>
+			</div>
+			<div class="large-10 columns">
+				<div id="about">
+					<h1>Our Nearest Transport Public Transport</h1>
+					<a class="button medium" href="{{site.baseurl}}/campus_map">&larr; Return to Map</a>
+			        <p>If you are taking public transport to UNL Campus Campolide you have a number of options including Metro, National Rail and the Bus Companies. Each of the stops have been mapped including a general distance from the nearest entrance to the stop in order to estimate your time.</p>					
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-12 columns" style="padding-top:40px; padding-bottom:40px;">
+				<p style="margin-bottom:0;"><strong>Filter Map Markers</strong></p>
+				<input placeholder='Bus Number / Metro Line' id='search' />
+				<div id="onscreen">
+
+				</div>
+			</div>
+
+		</div>
+		<div class="row map_container">
+			<div class="large-12 columns">
+				<div id='map-ui'></div>
+			    <div id="map" data-map="map" class="map">
+			</div>
+		</div>
+
+		    </div>
+		    <script src="{{site.baseurl}}/javascripts/site/script_trans.js"></script>

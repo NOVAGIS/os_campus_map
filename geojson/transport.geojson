@@ -1,0 +1,335 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Campolide Station",
+        "Transpor": "train",
+        "Distance": 762,
+        "Disc": "Sintra ",
+        "first_direct": "Casalinho Ajuda",
+        "second_direct": "B.º Madre Deus (Escola)",
+        "marker-symbol": "rail",
+        "marker-color": "#594",
+        "first_url": "http://www.cp.pt",
+        "second_url": "http://www.cp.pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.167999625205994,
+          38.73227194768793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Campolide",
+        "Transpor": "bus",
+        "Distance": 155,
+        "Disc": "202 ",
+        "first_direct": "Cais Sodré",
+        "second_direct": "B.º Padre Cruz",
+        "marker-symbol": "bus",
+        "marker-color": "#594",
+        "first_url": "http://www.carris.pt/en/bus/202/ascendente/",
+        "second_url": "http://www.carris.pt/en/bus/202/descendente/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.162447452545166,
+          38.732286594014276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "S. Sebastio red",
+        "Transpor": "metro",
+        "Distance": 562,
+        "Disc": "red line ",
+        "first_direct": "S. Sebastião",
+        "second_direct": "Aeroporto",
+        "marker-symbol": "rail-metro",
+        "marker-color": "#594",
+        "first_url": "http://www.metrolisboa.pt/",
+        "second_url": "http://www.metrolisboa.pt/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15456175804138,
+          38.73454836923047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "S. Sebastio blue",
+        "Transpor": "metro",
+        "Distance": 562,
+        "Disc": "blue line ",
+        "first_direct": "Santa Apolónia",
+        "second_direct": "Amadora Este",
+        "marker-symbol": "rail-metro",
+        "marker-color": "#594",
+        "first_url": "http://www.metrolisboa.pt/",
+        "second_url": "http://www.metrolisboa.pt/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.154524207115173,
+          38.73454418469861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Campolide",
+        "Transpor": "bus",
+        "Distance": 155,
+        "Disc": "758 ",
+        "first_direct": "Olaias",
+        "second_direct": "R. Junqueira",
+        "marker-symbol": "bus",
+        "marker-color": "#594",
+        "first_url": "http://www.carris.pt/en/bus/758/ascendente/",
+        "second_url": "http://www.carris.pt/en/bus/758/descendente/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.162447452545166,
+          38.73229287101038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Campolide",
+        "Transpor": "bus",
+        "Distance": 155,
+        "Disc": "701 ",
+        "first_direct": "Campo Grande (Metro)",
+        "second_direct": "Campo Ourique (Prazeres)",
+        "marker-symbol": "bus",
+        "marker-color": "#594",
+        "first_url": "http://www.carris.pt/en/bus/701/ascendente/",
+        "second_url": "http://www.carris.pt/en/bus/701/descendente/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.162442088127136,
+          38.73227613235291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "S. Sebastio",
+        "Transpor": "bus",
+        "Distance": 700,
+        "Disc": "742 ",
+        "first_direct": "Casalinho Ajuda",
+        "second_direct": "B.º Madre Deus (Escola)",
+        "marker-symbol": "bus",
+        "marker-color": "#594",
+        "first_url": "http://www.carris.pt/en/bus/742/ascendente/",
+        "second_url": "http://www.carris.pt/en/bus/742/descendente/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15480852127075,
+          38.73332229090655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "S. Sebastio",
+        "Transpor": "bus",
+        "Distance": 700,
+        "Disc": "713 ",
+        "first_direct": "Estação Campolide",
+        "second_direct": "Alameda D.A.Henriques",
+        "marker-symbol": "bus",
+        "marker-color": "#594",
+        "first_url": "http://www.carris.pt/en/bus/713/ascendente/",
+        "second_url": "http://www.carris.pt/en/bus/713/descendente/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15480852127075,
+          38.73330555249031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "S. Sebastio",
+        "Transpor": "bus",
+        "Distance": 650,
+        "Disc": "746 ",
+        "first_direct": "Estação Damaia",
+        "second_direct": "Marquês Pombal",
+        "marker-symbol": "bus",
+        "marker-color": "#594",
+        "first_url": "http://www.carris.pt/en/bus/746/ascendente/",
+        "second_url": "http://www.carris.pt/en/bus/746/descendente/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.153499603271484,
+          38.73403994681401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "P. de Espanha",
+        "Transpor": "metro",
+        "Distance": 656,
+        "Disc": "blue line ",
+        "first_direct": "Santa Apolónia",
+        "second_direct": "Amadora Este",
+        "marker-symbol": "rail-metro",
+        "marker-color": "#594",
+        "first_url": "http://www.metrolisboa.pt/",
+        "second_url": "http://www.metrolisboa.pt/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.158413410186768,
+          38.73767623822121
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "P. de Espanha",
+        "Transpor": "bus",
+        "Distance": 660,
+        "Disc": "716 ",
+        "first_direct": "Benfica - Al. Padre Álvaro Proença",
+        "second_direct": "Alameda D.A.Henriques",
+        "marker-symbol": "bus",
+        "marker-color": "#594",
+        "first_url": "http://www.carris.pt/en/bus/716/ascendente/",
+        "second_url": "http://www.carris.pt/en/bus/716/descendente/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.158472418785095,
+          38.73786871799271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "P. de Espanha",
+        "Transpor": "bus",
+        "Distance": 660,
+        "Disc": "726 ",
+        "first_direct": "Pontinha Centro",
+        "second_direct": "Sapadores",
+        "marker-symbol": "bus",
+        "marker-color": "#594",
+        "first_url": "http://www.carris.pt/en/bus/726/ascendente/",
+        "second_url": "http://www.carris.pt/en/bus/726/descendente/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.158531427383423,
+          38.73792520652285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "P. de Espanha",
+        "Transpor": "bus",
+        "Distance": 660,
+        "Disc": "746 ",
+        "first_direct": "Marquês Pombal",
+        "second_direct": "Estação Damaia",
+        "marker-symbol": "bus",
+        "marker-color": "#594",
+        "first_url": "http://www.carris.pt/en/bus/746/ascendente/",
+        "second_url": "http://www.carris.pt/en/bus/746/descendente/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.158509969711302,
+          38.73791683785452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "P. de Espanha",
+        "Transpor": "bus",
+        "Distance": 660,
+        "Disc": "756 ",
+        "first_direct": "R. Junqueira",
+        "second_direct": "Olaias",
+        "marker-symbol": "bus",
+        "marker-color": "#594",
+        "first_url": "http://www.carris.pt/en/bus/756/ascendente/",
+        "second_url": "http://www.carris.pt/en/bus/756/descendente/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.158450961112976,
+          38.737866625824076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "P. de Espanha",
+        "Transpor": "aerobus",
+        "Distance": 665,
+        "Disc": "Aerobus ",
+        "first_direct": "P. de Espanha",
+        "second_direct": "Aeroporto",
+        "marker-symbol": "bus",
+        "marker-color": "#594",
+        "first_url": "http://www.carris.pt",
+        "second_url": "http://www.carris.pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15859580039978,
+          38.73804236777624
+        ]
+      }
+    }
+  ]
+}

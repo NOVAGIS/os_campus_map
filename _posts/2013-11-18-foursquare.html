@@ -1,0 +1,49 @@
+---
+layout: map
+title: "Campus Map Restauraunt"
+permalink: foursquare
+javascript:
+---
+
+<style>
+	/* Give our markers a background image */
+	    .leaflet-marker-icon {
+	      background: url(https://foursquare.com/img/pin-green.png);
+	      padding: 7px 7px 14px 7px;
+	      top: -6px;
+	      left: -6px;
+	      }
+</style>
+
+<div class="row header_map">
+	<div class="large-2 columns">
+		<div id='branding'></div>
+	</div>
+	<div class="large-10 columns">
+		<div id="about">
+			<h1>Hungry at UNL? </h1>
+			<a class="button medium" href="{{site.baseurl}}/">&larr; Return to Map</a>
+	        <p>Find the nearest places to grab a bite to eat when you have an hour between class, or you just want to stretch your legs and escape the campus. Find out the name of the place, what type of food it serves and the opening hours if available thanks to <a href="http://foursquare.com">foursquare</a>.</p>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="large-12 columns" style="padding-top:40px; padding-bottom:40px;">
+		<p style="margin-bottom:0;"><strong>Filter Map Markers</strong></p>
+		<input placeholder='Find Facilities' id='search' />
+		<div id="onscreen">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="row map_container">
+	<div class="large-12 columns">
+		<div id='map-ui'></div>
+	    <div id="map" data-map="map" class="map">
+	</div>
+</div>
+	
+    </div>
+    <script src="{{site.baseurl}}/javascripts/site/foursquare.js"></script>
+	

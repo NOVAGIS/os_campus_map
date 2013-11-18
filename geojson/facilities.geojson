@@ -1,0 +1,787 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 14,
+        "name": "Security",
+        "OWNER": "Front Gate",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "police"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.160371744744163,
+          38.73457209059099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 15,
+        "name": "Security",
+        "OWNER": "Rectorate Desk",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "police"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.160323048701233,
+          38.734013088036846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 16,
+        "name": "Security",
+        "OWNER": "Buiness School - Front Desk",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "police"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.160247420972109,
+          38.73287547324799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 17,
+        "name": "Security",
+        "OWNER": "ISEGI",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "police"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.159880806081837,
+          38.7323896344683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 18,
+        "name": "Security",
+        "OWNER": "Residence - Front Desk",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "police"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16195768204786,
+          38.73310872911635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 19,
+        "name": "Security",
+        "OWNER": "Law School - Front Desk",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "police"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.161402862705774,
+          38.73328306476396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 20,
+        "name": "Bank",
+        "OWNER": "Residence",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "bank"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.161819678510078,
+          38.733007101961284
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 21,
+        "name": "Bank",
+        "OWNER": "Santander Totta",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "bank"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15938508129765,
+          38.73557256590942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 22,
+        "name": "Cash Point (ATM)",
+        "OWNER": "Santander MB",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "bank"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.160195074755805,
+          38.73529434718917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 23,
+        "name": "Cash Point (ATM)",
+        "OWNER": "Residence",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "bank"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.161837285599995,
+          38.7330459131597
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 24,
+        "name": "Cash Point (ATM)",
+        "OWNER": "Santander Business School",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "bank"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16018599192621,
+          38.7328276795776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 25,
+        "name": "Medical Facilities",
+        "OWNER": "Residence",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.161980180018869,
+          38.73315152645556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 26,
+        "name": "Book Shop",
+        "OWNER": "Residence",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "shop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.161793232426902,
+          38.73290808622771
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 27,
+        "name": "Toilets",
+        "OWNER": "Residence SU",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.162097064222053,
+          38.733301044876626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 28,
+        "name": "Toilets",
+        "OWNER": "Residence Ground Floor",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.162002919904443,
+          38.73331379002746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 29,
+        "name": "Toilets",
+        "OWNER": "Law School",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16138396034921,
+          38.73324654478056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 30,
+        "name": "Toilets",
+        "OWNER": "Business School - Ground Floor",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.160461833387366,
+          38.73264094518236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 31,
+        "name": "Toilets",
+        "OWNER": "Business School - Front Door",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.160146032805647,
+          38.73289873686215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 32,
+        "name": "Toilets",
+        "OWNER": "ISEGI - Ground Floor",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15981639330477,
+          38.732423774276356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 33,
+        "name": "Toilets",
+        "OWNER": "ISEGI - Annex",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "toilets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.159255280238693,
+          38.73261340891689
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 34,
+        "name": "Info Desk",
+        "OWNER": "Front Gate",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "circle-stroked"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.160371654957254,
+          38.7345467144773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 35,
+        "name": "Info Desk",
+        "OWNER": "Rectorate",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "circle-stroked"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16031081701709,
+          38.73401695809843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 36,
+        "name": "Info Desk",
+        "OWNER": "Business School - Front Desk",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "circle-stroked"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.160233365726635,
+          38.73287959803227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 37,
+        "name": "Info Desk",
+        "OWNER": "ISEGI - Front Desk",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "circle-stroked"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.159954059539258,
+          38.73240300183137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 38,
+        "name": "Info Desk",
+        "OWNER": "Residence - Front Desk",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "circle-stroked"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.162019312915978,
+          38.73318564153736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 39,
+        "name": "Info Desk",
+        "OWNER": "Law School - Front Desk",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "circle-stroked"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16136951129883,
+          38.733203712556524
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 42,
+        "name": "Library",
+        "OWNER": "Law School",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "library"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.161305595078051,
+          38.73305037119228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 43,
+        "name": "Library",
+        "OWNER": "ISEGI - 3rd Floor",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "library"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.160045419826972,
+          38.73234422475744
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 44,
+        "name": "Library",
+        "OWNER": "Business School - Ground Floor",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "library"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.160399054508233,
+          38.732255317809845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 45,
+        "name": "Coffee Shop",
+        "OWNER": "ISEGI",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15985265998801,
+          38.73237297485423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 46,
+        "name": "Coffee Shop",
+        "OWNER": "Business School Cantina",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16041568623531,
+          38.73264640143806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 47,
+        "name": "Coffee Shop",
+        "OWNER": "Business School - Beside Church",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.160869396763093,
+          38.732669821481615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 48,
+        "name": "Coffee Shop",
+        "OWNER": "Residence Cantina",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.162000958369275,
+          38.7333619965685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 49,
+        "name": "Coffee Shop",
+        "OWNER": "Residence - Cantina",
+        "OWNTYPE": null,
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": null,
+        "LASTUPDATE": null,
+        "LASTEDITOR": null,
+        "marker-color": "#594",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.162113186332844,
+          38.73333717575599
+        ]
+      }
+    }
+  ]
+}
