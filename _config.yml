@@ -1,11 +1,11 @@
-baseurl: /campusmap_reports
+baseurl: /os_campus_map
 permalink: pretty
 paginate: 10
 relative_permalinks: true
 markdown: rdiscount
 prose:
-  siteurl: 'http://isegimap.github.io/campusmap_reports/'
-  relativeLinks: 'http://isegimap.github.io/campusmap_reports/links.jsonp'
+  siteurl: 'http://novagis.github.io/os_campus_map/'
+  relativeLinks: 'http://novagis.github.io/os_campus_map/links.jsonp'
   media: 'media'
   metadata:
     _posts:
