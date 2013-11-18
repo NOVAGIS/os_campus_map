@@ -1,4 +1,4 @@
-baseurl: /os_campus_map
+baseurl: os_campus_map
 permalink: pretty
 paginate: 10
 relative_permalinks: true
