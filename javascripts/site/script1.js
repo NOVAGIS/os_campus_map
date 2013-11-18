@@ -76,15 +76,19 @@ markerLayer1.on('layeradd', function(e) {
         minWidth: 100
     });
 	
-	// create array of markers
-	var makers = [];
-	
-	this.eachLayer(function(feature) { makers.push(popupContent); });
-
-	
-	// display a list of markers.
-	document.getElementById('onscreen').innerHTML = makers;
+	// construct an empty list to fill with onscreen markers
+    var inBounds = []
+// for each marker, consider whether it is currently visible by comparing
+// with the current map bounds
+markerLayer1.eachLayer(function(marker) {
+        inBounds.push('<h1 style="line-height:1;margin-bottom:0;">' + marker.feature.properties.name + '</h1>' +
+	                        '<p style="margin-top:0;">'+ marker.feature.properties.OWNER +'</p>');
 });
+// display a list of markers.
+document.getElementById('onscreen').innerHTML = inBounds.join(' ');
+});
+
+
 
 // Add custom popups to each using our custom feature properties
 markerLayer2.on('layeradd', function(e) {

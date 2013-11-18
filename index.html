@@ -20,21 +20,21 @@ title: Welcome to ISEGI Campus Map Open Source Team Site
 	<div class="large-12 columns" style="padding-top:40px; padding-bottom:40px;">
 		<p style="margin-bottom:0;"><strong>Filter Map Markers</strong></p>
 		<input placeholder='Find Facilities' id='search' />
-		<div id="onscreen">
-			
-		</div>
+		
+		<ul id="mrk_list"></ul>
 	</div>
 	
 </div>
 <div class="row map_container">
-	<div class="large-12 columns">
+	<div class="large-8 columns">
 		<div id='map-ui'></div>
-	    <div id="map" data-map="map" class="map">
+	    <div id="map" data-map="map" class="map"></div>
 	</div>
-	
+	<div class="large-3 columns">
+		<div id="onscreen">	
+		</div>
+	</div>
 </div>
-	
-    </div>
 
     <script src="{{site.baseurl}}/javascripts/site/script1.js"></script>
     <script src="{{site.baseurl}}/javascripts/site/foursquare.js"></script>
