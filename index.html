@@ -17,23 +17,26 @@ title: Welcome to ISEGI Campus Map Open Source Team Site
 	</div>
 </div>
 <div class="row">
-	<div class="large-12 columns" style="padding-top:40px; padding-bottom:40px;">
-		<p style="margin-bottom:0;"><strong>Filter Map Markers</strong></p>
-		<input placeholder='Find Facilities' id='search' />
-		
-		<ul id="mrk_list"></ul>
+	<div class="large-12 columns" style="padding-top:20px;">
 	</div>
 	
 </div>
 <div class="row map_container">
-	<div class="large-8 columns">
+		
+	<div class="large-3 columns" style="border:1px solid #ddd; background:#e7e7e7;padding-left:0;padding-right:0;border-top-left-radius:5px;">
+		<div class="large-12 columns search" style="border-top-left-radius:5px;">
+			<p style=""><strong>Filter Map Markers</strong>
+			<input placeholder='Info....' id='search' class="large-12 columns" style="padding:0;"/>
+			</p>
+		</div>
+		<div class="large-12 columns" id="onscreen">	
+		</div>
+	</div>
+	<div class="large-9 columns" style="border:1px solid #ddd; background:#e7e7e7;padding-left:0;padding-right:0;">
 		<div id='map-ui'></div>
 	    <div id="map" data-map="map" class="map"></div>
 	</div>
-	<div class="large-3 columns">
-		<div id="onscreen">	
-		</div>
-	</div>
+	
 </div>
 
     <script src="{{site.baseurl}}/javascripts/site/script1.js"></script>

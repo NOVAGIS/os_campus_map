@@ -78,14 +78,16 @@ markerLayer1.on('layeradd', function(e) {
 	
 	// construct an empty list to fill with onscreen markers
     var inBounds = []
+
 // for each marker, consider whether it is currently visible by comparing
 // with the current map bounds
 markerLayer1.eachLayer(function(marker) {
-        inBounds.push('<h1 style="line-height:1;margin-bottom:0;">' + marker.feature.properties.name + '</h1>' +
-	                        '<p style="margin-top:0;">'+ marker.feature.properties.OWNER +'</p>');
+        inBounds.push('<div id="open-popup" data-foo="' + marker.feature.properties.OBJECTID + '" class="item"><div class="title">' + marker.feature.properties.name + '</div>' +
+	                        '<div class="info">'+ marker.feature.properties.OWNER +'</div></div>');
 });
 // display a list of markers.
 document.getElementById('onscreen').innerHTML = inBounds.join(' ');
+// when a user clicks the button run the `clickButton` function.
 });
 
 
@@ -138,8 +140,4 @@ markerLayer3.on('layeradd', function(e) {
         closeButton: true,
         minWidth: 120
     });
-
 });
-
-
-

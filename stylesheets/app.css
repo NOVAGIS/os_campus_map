@@ -7467,3 +7467,20 @@ pre {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+#onscreen {
+/*	max-height:600px;
+	overflow:hidden;*/
+	background:#ccc;
+}
+#onscreen .title {
+font-family: 'OswaldBook', "Arial Narrow", sans-serif;
+}
+#onscreen .item {
+	padding:5px 0;
+	border-bottom:1px solid #ccc;
+}
+#onscreen .info {font:normal 13px/18px 'Helvetica Neue', Helvetica, sans-serif;
+color: #333;
+-webkit-font-smoothing: antialiased;}
+.search {padding:10px;background:#fff;margin-bottom:1em;}

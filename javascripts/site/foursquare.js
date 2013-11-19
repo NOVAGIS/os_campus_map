@@ -58,6 +58,8 @@ map.markerLayer.on('layeradd', function(e) {
         closeButton: false,
         minWidth: 320
     });
+
+	
 });
 
 var config = {
@@ -69,25 +71,7 @@ var config = {
   
  
   //<![CDATA[
-/* Attempt to retrieve access token from URL. 
-  function doAuthRedirect() {
-    var redirect = window.location.href.replace(window.location.hash, '');
-    var url = config.authUrl + 'oauth2/authenticate?response_type=token&client_id=' + config.apiKey +
-        '&redirect_uri=' + encodeURIComponent(redirect) +
-        '&state=' + encodeURIComponent($.bbq.getState('req') || 'users/self');
-    window.location.href = url;
-  };
 
-  if ($.bbq.getState('access_token')) {
-    // If there is a token in the state, consume it
-    var token = $.bbq.getState('access_token');
-    $.bbq.pushState({}, 2)
-  } else if ($.bbq.getState('error')) {
-  } else {
-    doAuthRedirect();
-  }*/
-
-	// venues/search?ll=38.73,-9.16&categoryId=4d4b7105d754a06374d81259&radius=800
 	$.getJSON(config.apiUrl + 'v2/venues/search?v=20131016&ll=38.73,-9.16&categoryId=4d4b7105d754a06374d81259&radius=800&client_id=' + config.apiKey + '&client_secret=' + config.apiSecret, {}, function(data) {
     	venues = data['response']['venues'];
 	      /* Place marker for each venue. */
@@ -116,6 +100,37 @@ var config = {
         .bindPopup(content, { closeButton: true })  
         map.addLayer(marker);
 		}
+		
+		
+		// construct an empty list to fill with onscreen markers
+	    var inBounds = []
+		
+		// for each marker, consider whether it is currently visible by comparing
+		// with the current map bounds
+		for (var i = 0; i < venues.length; i++) {
+		        inBounds.push('<div id="open-popup" class="item"><div class="title">' + venues[i]['name'] + '</div>' +
+			                        '<div class="info">'+ venues[i]['categories'][0]['name'] +'</div></div>');
+		};
+		// display a list of markers.
+		document.getElementById('onscreen').innerHTML = inBounds.join(' ');
+		
     });
+	$('#search').keyup(search);
+	// search functionality for the 
+	
+	function search() {
+	    // get the value of the search input field
+	    var searchString = $('#search').val().toLowerCase();
+
+	    markerLayer1.setFilter(showType);
+
+	    // here we're simply comparing the 'name' property of each marker
+	    // to the search string, seeing whether the former contains the latter.
+	    function showType(feature) {
+	        return feature.properties.name
+	            .toLowerCase()
+	            .indexOf(searchString) !== -1;
+	    }
+	}
   //]]>
   //]]>

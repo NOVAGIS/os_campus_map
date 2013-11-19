@@ -23,24 +23,29 @@ javascript:
 		<div id="about">
 			<h1>Hungry at UNL? </h1>
 			<a class="button medium" href="{{site.baseurl}}/">&larr; Return to Map</a>
+			<a class="button medium" href="{{site.baseurl}}/transport">Need Transport?</a>
 	        <p>Find the nearest places to grab a bite to eat when you have an hour between class, or you just want to stretch your legs and escape the campus. Find out the name of the place, what type of food it serves and the opening hours if available thanks to <a href="http://foursquare.com">foursquare</a>.</p>
 		</div>
 	</div>
 </div>
 <div class="row">
-	<div class="large-12 columns" style="padding-top:40px; padding-bottom:40px;">
-		<p style="margin-bottom:0;"><strong>Filter Map Markers</strong></p>
-		<input placeholder='Find Facilities' id='search' />
-		<div id="onscreen">
-			
-		</div>
+	<div class="large-12 columns" style="padding-top:20px;">
 	</div>
 	
 </div>
 <div class="row map_container">
-	<div class="large-12 columns">
+	<div class="large-3 columns" style="border:1px solid #ddd; background:#e7e7e7;padding-left:0;padding-right:0;border-top-left-radius:5px;">
+		<div class="large-12 columns search" style="border-top-left-radius:5px;">
+			<p style=""><strong>Filter Map Markers</strong>
+			<input placeholder='Info....' id='search' class="large-12 columns" style="padding:0;"/>
+			</p>
+		</div>
+		<div class="large-12 columns" id="onscreen">	
+		</div>
+	</div>
+	<div class="large-9 columns" style="border:1px solid #ddd; background:#e7e7e7;padding-left:0;padding-right:0;">
 		<div id='map-ui'></div>
-	    <div id="map" data-map="map" class="map">
+	    <div id="map" data-map="map" class="map"></div>
 	</div>
 </div>
 	

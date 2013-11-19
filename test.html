@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset=utf-8 />
-<title>Listing Markers</title>
+<title>Open Popup Programmatically</title>
   
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
   <script src='//api.tiles.mapbox.com/mapbox.js/v1.4.2/mapbox.js'></script>
@@ -15,55 +15,36 @@
 </head>
 <body>
 <style>
-#onscreen {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 300px;
-    height: 100px;
-    background: #fff;
-    z-index: 100;
-    overflow-y: scroll;
+#open-popup {
+    position:absolute;
+    top:5px;
+    right:5px;
 }
 </style>
 <div id='map'></div>
-<pre id='onscreen'></pre>
+<button id='open-popup'>open popup</button>
 <script>
-var map = L.mapbox.map('map', 'examples.map-20v6611k')
-	.setView([38.73300, -9.16], 15);
+var map = L.mapbox.map('map', 'examples.map-zr0njcqy');
 
-	// construct an empty list to fill with onscreen markers
-    var inBounds = []
-    // get the map bounds - the top-left and bottom-right locations
-        bounds = map.getBounds();
+// wait until the markers are loaded, so we know that `map.markerLayer.eachLayer`
+// will actually go over each marker
+map.markerLayer.on('ready', function(e) {
+    // when a user clicks the button run the `clickButton` function.
+    // Thanks to function hoisting in Javascript, we can define the function
+    // after we reference it here.
+    document.getElementById('open-popup').onclick = clickButton;
+});
 
-var markerLayer1 = L.mapbox.markerLayer()
-		.loadURL('geojson/entrances.geojson');
-		
-		markerLayer1.addTo(map);
-
-		
-		markerLayer1.on('layeradd', function(e) {
-		    var marker = e.layer,
-		        feature = marker.feature;
-		
-				// construct an empty list to fill with onscreen markers
-			    var inBounds = []
-	    // for each marker, consider whether it is currently visible by comparing
-	    // with the current map bounds
-	    markerLayer1.eachLayer(function(marker) {
-		        
-		            inBounds.push(marker.feature.properties.Entrances);
-		        
-		    });
-
-	    // display a list of markers.
-	    document.getElementById('onscreen').innerHTML = inBounds.join('\n');
-
-
- });
-    
-
+function clickButton() {
+    map.markerLayer.eachLayer(function(marker) {
+        // you can replace this test for anything else, to choose the right
+        // marker on which to open a popup. by default, popups are exclusive
+        // so opening a new one will close all of the others.
+        if (marker.feature.properties.title === 'Capital Pride Parade') {
+            marker.openPopup();
+        }
+    });
+}
 </script>
 </body>
 </html>
