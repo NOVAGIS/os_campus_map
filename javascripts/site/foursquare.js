@@ -109,7 +109,7 @@ var config = {
 		// with the current map bounds
 		for (var i = 0; i < venues.length; i++) {
 		        inBounds.push('<div id="open-popup" class="item"><div class="title">' + venues[i]['name'] + '</div>' +
-			                        '<div class="info">'+ venues[i]['categories'][0]['name'] +'</div></div>');
+			                        '<div class="info">'+ venues[i]['categories'][0]['name'] + ' <em>(' + venues[i]['location']['distance'] + 'm)</em></div></div>');
 		};
 		// display a list of markers.
 		document.getElementById('onscreen').innerHTML = inBounds.join(' ');
