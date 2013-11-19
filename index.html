@@ -7,12 +7,12 @@ title: Welcome to ISEGI Campus Map Open Source Team Site
 		<div id='branding'></div>
 	</div>
 	<div class="large-10 columns">
-		<div id="about">
+		<div id="about ">
 		    <h1>UNL - Campus Campolide </h1>
-			<a class="button medium" href="http://www.unl.pt">&larr; Return to UNL.pt</a>
+			<a  class="button medium" href="http://www.unl.pt">&larr; Return to UNL.pt</a>
 			<a class="button medium" href="{{site.baseurl}}/foursquare">Hungry?</a>
 			<a class="button medium" href="{{site.baseurl}}/transport">Need Transport?</a>
-		    <p>This is the Universidade de Lisboa Campus at Compolide. Both the NOVA School of Business and Economy, and ISEGI NOVA are located here.</p>
+		    <p id="firstStop">This is the Universidade de Lisboa Campus at Compolide. Both the NOVA School of Business and Economy, and ISEGI NOVA are located here.</p>
 		  </div>
 	</div>
 </div>
@@ -25,14 +25,14 @@ title: Welcome to ISEGI Campus Map Open Source Team Site
 		
 	<div class="large-3 columns" style="border:1px solid #ddd; background:#e7e7e7;padding-left:0;padding-right:0;border-top-left-radius:5px;">
 		<div class="large-12 columns search" style="border-top-left-radius:5px;">
-			<p style=""><strong>Filter Map Markers</strong>
+			<p  style=""><strong>Filter Map Markers</strong>
 			<input placeholder='Info....' id='search' class="large-12 columns" style="padding:0;"/>
 			</p>
 		</div>
 		<div class="large-12 columns" id="onscreen">	
 		</div>
 	</div>
-	<div class="large-9 columns" style="border:1px solid #ddd; background:#e7e7e7;padding-left:0;padding-right:0;">
+	<div id="maps" class="large-9 columns" style="border:1px solid #ddd; background:#e7e7e7;padding-left:0;padding-right:0;">
 		<div id='map-ui'></div>
 	    <div id="map" data-map="map" class="map"></div>
 	</div>
@@ -40,6 +40,28 @@ title: Welcome to ISEGI Campus Map Open Source Team Site
 </div>
 
     <script src="{{site.baseurl}}/javascripts/site/script1.js"></script>
-    <script src="{{site.baseurl}}/javascripts/site/foursquare.js"></script>
 	
+	
+	<!-- At the bottom of your page but inside of the body tag -->
+	<ol class="joyride-list" data-joyride>
+	  <li data-id="firstStop" data-text="To the map &rarr;" data-options="tipLocation:bottom;">
+	    <p>Welcome to the new UNL Campus Map. Use the buttons above to change your map type.</p>
+	  </li>
+	  <li data-id="maps" data-class="custom so-awesome" data-text="&larr; To Layers" data-options="tipLocation:top;">
+	    <h4>The Map</h4>
+	    <p>We have completely redesigned the map and create new cartography. Click on a marker or hover over a building for more information.</p>
+	  </li>
+	<li data-id="map-ui" data-class="custom so-awesome" data-text="&larr; to Search" data-options="tipLocation:bottom;">
+	    <h4>Choose Layers</h4>
+	    <p>Use this control to toggle your layers on and off.</p>
+	  </li>
+	  <li data-id="search" data-button="Next" data-options="tipLocation:bottom;tipAnimation:fade">
+	    <h4>Search</h4>
+	    <p>Not sure what you're looking for? We got it covered type your search here to filter e.g. Toilets...</p>
+	  </li>
+	  <li data-button="End">
+	    <h4>Suggestions?</h4>
+	    <p>Have you noticed any problems with the map? Help us improve it by opening an issue at <a href="https://github.com/NOVAGIS/os_campus_map">NOVAGIS/os_campus_map</a></p>
+	  </li>
+	</ol>	
 	

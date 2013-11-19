@@ -94,7 +94,7 @@ var config = {
 	
    /* content for the popup*/
 		var content = '<h1><a href=\"'+ venues[i]['url'] +'\" targer=\"blank\">' + venues[i]['name'] + '<\/a><\/h1>' +
-						        '<h2>Score: ' + venues[i]['score'] + '<\/h2>';	
+						        '<h2>Walk: ' + venues[i]['location']['distance'] + 'm<\/h2>';	
         var marker = new L.Marker(latLng, {icon: leafletIcon})
 		
         .bindPopup(content, { closeButton: true })  
