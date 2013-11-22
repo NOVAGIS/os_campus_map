@@ -64,18 +64,36 @@ markerLayer1.on('layeradd', function(e) {
         minWidth: 320
     });
 
-		// construct an empty list to fill with onscreen markers
-	    var inBounds = []
-
-	// for each marker, consider whether it is currently visible by comparing
-	// with the current map bounds
+		
 	markerLayer1.eachLayer(function(marker) {
 	        inBounds.push('<div id="open-popup" data-foo="' + marker.feature.properties.OBJECTID + '" class="item"><div class="title">' + marker.feature.properties.Disc + ' - <em>' + marker.feature.properties.Transpor + '</em></div>' +
 		                        '<div class="info"><a target="_blank"  href="' + marker.feature.properties.first_url + '">Direction of ' + marker.feature.properties.first_direct + '</a> / <a target="_blank"  href="' + marker.feature.properties.second_url + '">Direction of ' + marker.feature.properties.second_direct + '</a></div></div>');
 	});
-	// display a list of markers.
-	document.getElementById('onscreen').innerHTML = inBounds.join(' ');
-	// when a user clicks the button run the `clickButton` function.
+
+        // construct an empty list to fill with onscreen markers
+    var inBounds = []
+        
+// for each marker we want it to fill the list
+markerLayer1.eachLayer(function(marker) {
+        inBounds.push(marker);
+});
+//sort free markers
+        inBounds = sortMarkers(inBounds, 'id');
+        inBounds.reverse()
+        
+        //build list items from markers array
+        var index; 
+        for (index = 0; index < inBounds.length; ++index) {
+                $('<div id="open-popup" class="item"><div id="open-popup" data-foo="' + inBounds[index].feature.properties.OBJECTID + '" class="item"><div class="title">' + inBounds[index].feature.properties.Disc + ' - <em>' + inBounds[index].feature.properties.Transpor + '</em></div>' +
+		                        '<div class="info"><a target="_blank"  href="' + inBounds[index].feature.properties.first_url + '">Direction of ' + inBounds[index].feature.properties.first_direct + '</a> / <a target="_blank"  href="' + inBounds[index].feature.properties.second_url + '">Direction of ' + inBounds[index].feature.properties.second_direct + '</a></div></div>') 
+                        .prependTo($("div#onscreen"))
+                        .click((function(marker) {
+                                return function() {
+                                        map.panTo(marker.getLatLng());
+                                        marker.openPopup();
+                                };
+                        })(inBounds[index]));
+        }
 });
 
 $('#search').keyup(search);
