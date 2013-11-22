@@ -83,9 +83,9 @@ markerLayer1.on('layeradd', function(e) {
     var inBounds = []
 	
 // for each marker we want it to fill the list
-markerLayer1.eachLayer(function(marker) {
+
         inBounds.push(marker);
-});
+
 //sort free markers
 	inBounds = sortMarkers(inBounds, 'id');
 	inBounds.reverse()
