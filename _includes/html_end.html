@@ -27,9 +27,9 @@
   
   <script src="{{site.baseurl}}/javascripts/foundation/foundation.clearing.js"></script>
   
+ <script src="{{site.baseurl}}/javascripts/foundation/foundation.joyride.js"></script>
   <script src="{{site.baseurl}}/javascripts/foundation/foundation.cookie.js"></script>
-  
-  <script src="{{site.baseurl}}/javascripts/foundation/foundation.joyride.js"></script>
+
   
   <script src="{{site.baseurl}}/javascripts/foundation/foundation.orbit.js"></script>
   
@@ -43,7 +43,9 @@
     $(document).foundation();
   </script>
 	<script type="text/javascript">
-	  $(document).foundation('joyride', 'start');
+	  $(document).foundation('joyride', 'start', {'cookieMonster': true,           // true/false for whether cookies are used
+	  'cookieName': 'JoyRide',         // choose your own cookie name
+	  'cookieDomain': false});
 	</script>
 </body>
 </html>

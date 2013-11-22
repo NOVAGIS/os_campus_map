@@ -6,23 +6,25 @@ L.control.layers({
     'Aerial Map': L.mapbox.tileLayer('rusty.map-xq326six')
 },{},{collapsed: false}).addTo(map);
 
-
+// Add GeoJSON Marker Layers to the Map
+// Facilities Layer - Used for sidebar and map filter
 var markerLayer1 = L.mapbox.markerLayer().loadURL('geojson/facilities.geojson');
+// Transport Markers
 var markerLayer2 = L.mapbox.markerLayer().loadURL('geojson/transport.geojson');
+// Building Entrance Layer
 var markerLayer3 = L.mapbox.markerLayer().loadURL('geojson/entrances.geojson');
 
-// reference the map-ui area for the layer toggle.
+// reference the map-ui area for the layer toggle control.
 var ui = document.getElementById('map-ui');
 
 
 // add layers for the switcher
 addLayer(1, L.mapbox.tileLayer('rusty.isegi_map'), L.mapbox.gridLayer('rusty.isegi_map'),'UNL Buildings', 4);
-//addLayer(L.mapbox.tileLayer('rusty.isegi_facilities_labels'), L.mapbox.gridLayer('rusty.isegi_facilities_labels'),'UNL Facilities', 5);
 addLayer(0, markerLayer3, markerLayer3, 'UNL Building Entrances', 4);
 addLayer(0, markerLayer2, markerLayer2,'Transport Options', 6);
 addLayer(1, markerLayer1, markerLayer1, 'UNL Facilities', 7);
 
-
+// Function to add each layer in turn to the switcher and add interactivity
 function addLayer(active, layer, gridlayer, name, zIndex) {
     if (active === 1) {
 	layer
@@ -33,14 +35,15 @@ function addLayer(active, layer, gridlayer, name, zIndex) {
 	}
     // add the gridControl the active gridlayer
     var gridControl = L.mapbox.gridControl(gridlayer, {follow: true}).addTo(map);
-    // Create a simple layer switcher that toggles layers on and off.
+    
+// Create a simple layer switcher that toggles layers on and off.
     var item = document.createElement('li');
     var link = document.createElement('a');
 
     link.href = '#';
 	if (active === 1) {
-    link.className = 'active';
-} else {link.className = '';}
+    	link.className = 'active';
+	} else {link.className = '';}
     link.innerHTML = name;
 
     link.onclick = function(e) {
@@ -78,15 +81,33 @@ markerLayer1.on('layeradd', function(e) {
 	
 	// construct an empty list to fill with onscreen markers
     var inBounds = []
-
-// for each marker, consider whether it is currently visible by comparing
-// with the current map bounds
+	
+// for each marker we want it to fill the list
 markerLayer1.eachLayer(function(marker) {
-        inBounds.push('<div id="open-popup" data-foo="' + marker.feature.properties.OBJECTID + '" class="item"><div class="title">' + marker.feature.properties.name + '</div>' +
-	                        '<div class="info">'+ marker.feature.properties.OWNER +'</div></div>');
+        inBounds.push(marker);
 });
+//sort free markers
+	inBounds = sortMarkers(inBounds, 'id');
+	inBounds.reverse()
+	
+	//build list items from markers array
+	var index; 
+	for (index = 0; index < inBounds.length; ++index) {
+		$('<div id="open-popup" class="item"><div class="title">' + inBounds[index].feature.properties.name + '</div>' +
+		                    '<div class="info">'+ inBounds[index].feature.properties.OWNER +'</div></div>') 
+			.prependTo($("div#onscreen"))
+			.click((function(marker) {
+				return function() {
+					map.panTo(marker.getLatLng());
+					marker.openPopup();
+				};
+			})(inBounds[index]));
+	}
+	
+
+
 // display a list of markers.
-document.getElementById('onscreen').innerHTML = inBounds.join(' ');
+//document.getElementById('onscreen').innerHTML = inBounds.join(' ');
 // when a user clicks the button run the `clickButton` function.
 });
 
@@ -141,3 +162,11 @@ markerLayer3.on('layeradd', function(e) {
         minWidth: 120
     });
 });
+
+//sort marker arrays by ID, alphabetically
+	function sortMarkers(array, key) {
+		return array.sort(function(a, b) {
+			var x = a.feature[key]; var y = b.feature[key];
+			return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+		});
+	}
