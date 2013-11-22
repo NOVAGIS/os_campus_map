@@ -4,45 +4,6 @@ var map = L.mapbox.map('map').setView([38.73300, -9.16], 15);
 L.control.layers({
     'Base Map': L.mapbox.tileLayer('rusty.map-ag30cy9j,rusty.isegi_map').addTo(map)},{},{collapsed: false}).addTo(map);
 
-
-// reference the map-ui area for the layer toggle.
-var ui = document.getElementById('map-ui');
-
-/* add layers to the switcher if included */
-function addLayer(layer, gridlayer, name, zIndex) {
-    layer
-        .setZIndex(zIndex)
-        .addTo(map);
-    gridlayer
-        .addTo(map);
-    // add the gridControl the active gridlayer
-    var gridControl = L.mapbox.gridControl(gridlayer, {follow: true}).addTo(map);
-    // Create a simple layer switcher that toggles layers on and off.
-    var item = document.createElement('li');
-    var link = document.createElement('a');
-
-    link.href = '#';
-    link.className = 'active';
-    link.innerHTML = name;
-
-    link.onclick = function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-
-        if (map.hasLayer(layer)) {
-            map.removeLayer(layer);
-            map.removeLayer(gridlayer);
-            this.className = '';
-        } else {
-            map.addLayer(layer);
-            map.addLayer(gridlayer);
-            this.className = 'active';
-        }
-    };
-    item.appendChild(link);
-    ui.appendChild(item);
-};
-
 // Add custom popups to each using our custom feature properties
 map.markerLayer.on('layeradd', function(e) {
     var marker = e.layer,
@@ -58,6 +19,8 @@ map.markerLayer.on('layeradd', function(e) {
         closeButton: false,
         minWidth: 320
     });
+
+	console.log(markerLayer)
 
 	
 });
@@ -115,6 +78,8 @@ var config = {
 		document.getElementById('onscreen').innerHTML = inBounds.join(' ');
 		
     });
+
+
 	$('#search').keyup(search);
 	// search functionality for the 
 	
