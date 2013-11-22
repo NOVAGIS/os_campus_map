@@ -95,3 +95,10 @@ function search() {
     }
 }
 
+//sort marker arrays by ID, alphabetically
+        function sortMarkers(array, key) {
+                return array.sort(function(a, b) {
+                        var x = a.feature[key]; var y = b.feature[key];
+                        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+                });
+        }
