@@ -64,12 +64,6 @@ markerLayer1.on('layeradd', function(e) {
         minWidth: 320
     });
 
-		
-	markerLayer1.eachLayer(function(marker) {
-	        inBounds.push('<div id="open-popup" data-foo="' + marker.feature.properties.OBJECTID + '" class="item"><div class="title">' + marker.feature.properties.Disc + ' - <em>' + marker.feature.properties.Transpor + '</em></div>' +
-		                        '<div class="info"><a target="_blank"  href="' + marker.feature.properties.first_url + '">Direction of ' + marker.feature.properties.first_direct + '</a> / <a target="_blank"  href="' + marker.feature.properties.second_url + '">Direction of ' + marker.feature.properties.second_direct + '</a></div></div>');
-	});
-
         // construct an empty list to fill with onscreen markers
     var inBounds = []
         
