@@ -97,5 +97,7 @@ var config = {
 	            .indexOf(searchString) !== -1;
 	    }
 	}
+	
+	L.control.attribution().addAttribution('Venues from <a href="http://foursquare.com" target="_blank">Foursquare</a>').addTo(map);
   //]]>
   //]]>

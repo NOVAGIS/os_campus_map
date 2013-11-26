@@ -165,3 +165,5 @@ markerLayer3.on('layeradd', function(e) {
 			return ((x < y) ? -1 : ((x > y) ? 1 : 0));
 		});
 	}
+	L.control.attribution().addAttribution('Venues from <a href="http://foursquare.com" target="_blank">Foursquare</a>').addTo(map);
+
