@@ -782,6 +782,27 @@
           38.73333717575599
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 50,
+        "name": "Coffee Shop",
+        "OWNER": "ISEGI - Annex 1",
+        "OWNTYPE": "",
+        "SUBTYPEFIE": 790,
+        "FEATURECOD": "Building General",
+        "FULLADDR": "",
+        "marker-color": "#594",
+        "marker-symbol": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.159223437309265,
+          38.732543950401706
+        ]
+      }
     }
   ]
 }
